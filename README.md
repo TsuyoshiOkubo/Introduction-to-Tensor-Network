@@ -5,7 +5,7 @@
 
 ## ２次元イジング模型のシミュレーション実習
 
-### 実習のスライド：
+### [実習のスライド](計算物理春の学校2023：テンソルネットワーク法入門（実習）.pdf)
 
 ### 実習0 モンテカルロ法（比較のため）
 * snapshotの観察：[Ex0-1.ipynb](Exercise/Ex0-1.ipynb) [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/TsuyoshiOkubo/Introduction-to-Tensor-Network/blob/main/Exercise/Ex0-1.ipynb)
