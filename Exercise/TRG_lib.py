@@ -3,6 +3,7 @@
 # and X.-C. Gu, M. Levin, and X.-G. Wen, PRB 78, 205116(2008).
 # 2017 April Tsuyoshi Okubo
 # Updated on July, 2019
+# Updated on May, 2025
 
 import numpy as np
 import scipy as scipy
@@ -191,10 +192,10 @@ def TRG_Square_Ising(T,D,TRG_steps,Energy_flag):
         free_energy_density +=  np.log(TRG_factors[i_TRG]) * 0.5**i_TRG
     ## note: we normalize A so that Trace(A) = 1.0
     free_energy_density = -T * 0.5 * (free_energy_density + 0.5**TRG_steps*np.log(Trace_tensor(A))) 
-    print("T, free_energy_density = "+repr(T)+" "+repr(free_energy_density))
+    print("T, free_energy_density = ", T, free_energy_density)
     if Energy_flag:
         energy_density = Trace_tensor(E1)/Trace_tensor(A)
-        print("T, energy_density = "+repr(T)+" "+repr(energy_density))
+        print("T, energy_density = ", T, energy_density)
         return free_energy_density,energy_density
     else:
         return free_energy_density
